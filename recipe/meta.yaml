@@ -1,4 +1,4 @@
-{% set version = '1.8.0' %}
+{% set version = "1.11.5" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OmicNavigator_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OmicNavigator/OmicNavigator_{{ version }}.tar.gz
-  sha256: 98a72ed6b12bac39fc71edc9ec9e2eb53e374921a05743715c86e1f2f35e3120
+  sha256: a64a005ca1e3773b3322092fdc1dc33205184da724928275d7816acc397b6430
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -41,17 +41,11 @@ test:
 about:
   home: https://github.com/abbvie-external/OmicNavigator
   license: MIT
-  summary: "A tool for interactive exploration of the results from 'omics' experiments to facilitate
-    novel discoveries from high-throughput biology. The software includes R functions
-    for the 'bioinformatician' to deposit study metadata and the outputs from statistical
-    analyses (e.g. differential expression, enrichment). These results are then exported
-    to an interactive JavaScript dashboard that can be interrogated on the user's
-    local machine or deployed online to be explored by collaborators. The dashboard
-    includes 'sortable' tables, interactive plots including network visualization, and
-    fine-grained filtering based on statistical significance."
+  summary: A tool for interactive exploration of the results from 'omics' experiments to facilitate novel discoveries from high-throughput biology. The software includes R functions for the 'bioinformatician' to deposit study metadata and the outputs from statistical analyses (e.g. differential expression, enrichment). These
+    results are then exported to an interactive JavaScript dashboard that can be interrogated on the user's local machine or deployed online to be explored by collaborators. The dashboard includes 'sortable' tables, interactive plots including network visualization, and fine-grained filtering based on statistical significance.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
