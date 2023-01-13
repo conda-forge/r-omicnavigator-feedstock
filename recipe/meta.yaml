@@ -1,4 +1,4 @@
-{% set version = "1.11.5" %}
+{% set version = "1.13.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OmicNavigator_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OmicNavigator/OmicNavigator_{{ version }}.tar.gz
-  sha256: a64a005ca1e3773b3322092fdc1dc33205184da724928275d7816acc397b6430
+  sha256: 80e3aa04ba3eafc787ca639d813bf2508fe3f09ce87d55083ca44bc9a216c1a0
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
