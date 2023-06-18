@@ -1,11 +1,11 @@
-About r-omicnavigator
-=====================
+About r-omicnavigator-feedstock
+===============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-omicnavigator-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/abbvie-external/OmicNavigator
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-omicnavigator-feedstock/blob/main/LICENSE.txt)
 
 Summary: A tool for interactive exploration of the results from 'omics' experiments to facilitate novel discoveries from high-throughput biology. The software includes R functions for the 'bioinformatician' to deposit study metadata and the outputs from statistical analyses (e.g. differential expression, enrichment). These results are then exported to an interactive JavaScript dashboard that can be interrogated on the user's local machine or deployed online to be explored by collaborators. The dashboard includes 'sortable' tables, interactive plots including network visualization, and fine-grained filtering based on statistical significance.
 
