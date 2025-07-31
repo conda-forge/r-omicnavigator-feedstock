@@ -1,4 +1,4 @@
-{% set version = "1.15.0" %}
+{% set version = "1.16.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OmicNavigator_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OmicNavigator/OmicNavigator_{{ version }}.tar.gz
-  sha256: ff1c8151279de0d0a0ad507a58733e81dacbead89659fb819411bd7f25e089ac
+  sha256: 7a91f76f5f342cd008a8d2cc9ca73a9c5e929e1538aa55d8d316030fd29980dd
 
 build:
   number: 0
