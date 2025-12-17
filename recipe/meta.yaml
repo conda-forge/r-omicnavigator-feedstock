@@ -1,4 +1,4 @@
-{% set version = "1.16.0" %}
+{% set version = "1.19.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/OmicNavigator_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/OmicNavigator/OmicNavigator_{{ version }}.tar.gz
-  sha256: 7a91f76f5f342cd008a8d2cc9ca73a9c5e929e1538aa55d8d316030fd29980dd
+  sha256: f59e12ac172f937fc5721e96234a4f68adb3e1378104c455d6eb8a98f987a261
 
 build:
-  number: 1
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
